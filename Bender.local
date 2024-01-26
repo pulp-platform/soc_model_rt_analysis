@@ -1,0 +1,2 @@
+overrides:
+  register_interface:  { git: "https://github.com/pulp-platform/register_interface.git", version: 0.3.2         }
