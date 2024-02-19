@@ -1,0 +1,98 @@
+packages:
+  apb:
+    revision: 77ddf073f194d44b9119949d2421be59789e69ae
+    version: 0.2.4
+    source:
+      Git: https://github.com/pulp-platform/apb.git
+    dependencies:
+    - common_cells
+  axi:
+    revision: 1433ab5aecd67e79fe6bac4bb7d566e687c3a552
+    version: null
+    source:
+      Git: https://github.com/pulp-platform/axi.git
+    dependencies:
+    - common_cells
+    - common_verification
+    - tech_cells_generic
+  axi2mem:
+    revision: 0311ca4a6c7b9454b2eee7399f98538ebfd464d6
+    version: null
+    source:
+      Git: https://github.com/AlSaqr-platform/axi2mem.git
+    dependencies:
+    - common_cells
+  axi_llc:
+    revision: 559bcbd09a5a884dbe31e2d72fd95d024e357f39
+    version: 0.2.1
+    source:
+      Git: git@github.com:pulp-platform/axi_llc.git
+    dependencies:
+    - axi
+    - common_cells
+    - common_verification
+    - register_interface
+    - tech_cells_generic
+  axi_riscv_atomics:
+    revision: 0ac3a78fe342c5a5b9b10bff49d58897f773059e
+    version: 0.8.2
+    source:
+      Git: git@github.com:pulp-platform/axi_riscv_atomics.git
+    dependencies:
+    - axi
+    - common_cells
+    - common_verification
+  axi_slice:
+    revision: a4f72bc21ac4d7da631e8309d9f8d0c34b735c23
+    version: 1.1.4
+    source:
+      Git: https://github.com/pulp-platform/axi_slice.git
+    dependencies:
+    - common_cells
+  cluster_interconnect:
+    revision: 7d0a4f8acae71a583a6713cab5554e60b9bb8d27
+    version: 1.2.1
+    source:
+      Git: https://github.com/pulp-platform/cluster_interconnect.git
+    dependencies:
+    - common_cells
+  common_cells:
+    revision: 2bd027cb87eaa9bf7d17196ec5f69864b35b630f
+    version: 1.32.0
+    source:
+      Git: https://github.com/pulp-platform/common_cells.git
+    dependencies:
+    - common_verification
+    - tech_cells_generic
+  common_verification:
+    revision: 9c07fa860593b2caabd9b5681740c25fac04b878
+    version: 0.2.3
+    source:
+      Git: https://github.com/pulp-platform/common_verification.git
+    dependencies: []
+  hyperbus:
+    revision: 80de8df600edc5d7956a94c9d42f911d6e61efd7
+    version: 0.0.4
+    source:
+      Git: git@github.com:pulp-platform/hyperbus.git
+    dependencies:
+    - axi
+    - common_cells
+    - register_interface
+    - tech_cells_generic
+  register_interface:
+    revision: 146501d80052b61475cdc333d3aab4cd769fd5dc
+    version: 0.3.9
+    source:
+      Git: https://github.com/pulp-platform/register_interface.git
+    dependencies:
+    - apb
+    - axi
+    - common_cells
+  tech_cells_generic:
+    revision: 7968dd6e6180df2c644636bc6d2908a49f2190cf
+    version: 0.2.13
+    source:
+      Git: https://github.com/pulp-platform/tech_cells_generic.git
+    dependencies:
+    - common_verification
