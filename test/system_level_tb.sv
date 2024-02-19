@@ -504,7 +504,7 @@ module tb_system_level #(
                @(posedge clk);
              end else begin
                 axi_cl_master.clear_memory_regions();
-                axi_cl_master.add_memory_region(HyperBaseAddr,HyperBaseAddr+SpmRegionLength/16,axi_pkg::DEVICE_NONBUFFERABLE);
+                axi_cl_master.add_memory_region(HyperBaseAddr+SpmRegionLength*4,HyperBaseAddr+SpmRegionLength*5,axi_pkg::DEVICE_NONBUFFERABLE);
                 axi_cl_master.run(ClAxiNumRd,ClAxiNumWR);
              end
           end
