@@ -8,7 +8,7 @@ package:
     - "Luca Valente <luca.valente@unibo.it>"
 
 dependencies:
-  axi: { git: "https://github.com/pulp-platform/axi.git", rev: 1433ab5aecd67e79fe6bac4bb7d566e687c3a552 }
+  axi: { git: "https://github.com/pulp-platform/axi.git", rev: ab886220421633d179f51caf42e0e2407f3e4b78 }
   common_cells: { git: "https://github.com/pulp-platform/common_cells.git", version: 1.21.0 }
   axi_riscv_atomics: { git: "git@github.com:pulp-platform/axi_riscv_atomics.git", version: 0.8.2 }
   axi_llc: { git: "git@github.com:pulp-platform/axi_llc.git", version: 0.2.1 }
