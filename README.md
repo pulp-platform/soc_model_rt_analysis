@@ -35,7 +35,7 @@ To do so:
 ```
 git clone https://github.com/pulp-platform/carfield/tree/main
 cd carfield
-git checkout 23030de979e4ad72f5cc14a4ec60e0c764dab01b
+git checkout ddc9c04733461f8edae334be8022cd80d934c3d8
 make car-init
 make car-hw-build
 make car-sw-build

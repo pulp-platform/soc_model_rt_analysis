@@ -7,7 +7,7 @@ packages:
     dependencies:
     - common_cells
   axi:
-    revision: 1433ab5aecd67e79fe6bac4bb7d566e687c3a552
+    revision: ab886220421633d179f51caf42e0e2407f3e4b78
     version: null
     source:
       Git: https://github.com/pulp-platform/axi.git
@@ -57,8 +57,8 @@ packages:
     dependencies:
     - common_cells
   common_cells:
-    revision: 2bd027cb87eaa9bf7d17196ec5f69864b35b630f
-    version: 1.32.0
+    revision: ad22699793d98ef714f120c6268fe92d096a61e1
+    version: 1.33.1
     source:
       Git: https://github.com/pulp-platform/common_cells.git
     dependencies:

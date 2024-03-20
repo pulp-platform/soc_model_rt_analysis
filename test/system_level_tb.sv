@@ -408,7 +408,7 @@ module tb_system_level #(
                @(posedge clk);
           end else begin
              axi_cl_master.add_memory_region(SPMBaseAddr,SPMBaseAddr+SPMLength,axi_pkg::DEVICE_NONBUFFERABLE);
-             axi_cl_master.add_traffic_shaping(ClAxiBSize,3,10);
+             axi_cl_master.add_traffic_shaping_with_size(ClAxiBSize,3,10);
              axi_cl_master.run(ClAxiNumRd,ClAxiNumWR);
           end
        end
